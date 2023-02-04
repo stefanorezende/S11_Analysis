@@ -9,7 +9,7 @@
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "console": "internalConsole",//"integratedTerminal",
+            "console": "integratedTerminal",//"internalConsole",
             //"justMyCode": true,
             "stopOnEntry": true
         }

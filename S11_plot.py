@@ -48,6 +48,10 @@ for name in sh_cst:
     df.sort_values(by='freq', inplace=True)
     corr = df.corr()
 
+    if name == 'MLIN_Disc_Monopole' or name == 'CPW_Disc_Monopole':
+        df = df.merge(df_ads2, how= 'outer', on='freq')
+        df.sort_values(by='freq', inplace=True)
+        corr = df.corr()
     
     with pd.ExcelWriter('Correlations.xlsx', mode= 'a') as writer:        
         corr.to_excel(writer, sheet_name= name)
