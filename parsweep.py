@@ -32,5 +32,5 @@ def separar_dataframes(arquivo):
         print(f'Dataframe "{nome}" salvo em "{nome_arquivo}".')
 
 # Exemplo de uso:
-arquivo_txt = 'Simul X Medidas\\Cardioid\\Par Sweep\\Lgnd.txt'
+arquivo_txt = 'Simul X Medidas\\Cardioid\\Par Sweep\\pParamSweep2.txt'
 separar_dataframes(arquivo_txt)
